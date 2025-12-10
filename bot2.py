@@ -17,7 +17,9 @@ from aiogram.types import (
 # ------------------------
 # CONFIG
 # ------------------------
-TOKEN = "8396998653:AAGLdV013TRrwVXfLepgspAU7mIBW9bsliU"  # <-- توکن ربات را اینجا قرار بده
+#TOKEN = "8396998653:AAGLdV013TRrwVXfLepgspAU7mIBW9bsliU"  # <-- توکن ربات را اینجا قرار بده
+import os
+TOKEN = os.getenv("BOT_TOKEN")
 DB_PATH = "database.db"
 EXCEL_PATH = "report.xlsx"
 
